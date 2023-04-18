@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+
+  afp_server:
+    container_name: afp_server
+    image: cptactionhank/netatalk:latest
+    restart: always
+    ports:
+      - 548:548
+    volumes:
+      - /myFolder:/media/share/myFolder
+      - /myFolder2:/media/share/myFolder2
+    environment:
+      - AFP_USER=myUsername
+      - AFP_PASSWORD=${MY_SUPER_PASSWORD}
+      - AFP_UID=1000
+      - AFP_GID=1000
+      - AVAHI=1
