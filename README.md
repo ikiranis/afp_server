@@ -1,4 +1,4 @@
-# afp_server
+# AFP server
 
 ## Share folders via AFP
 
