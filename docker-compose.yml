@@ -9,8 +9,8 @@ services:
     ports:
       - 548:548
     volumes:
-      - /myFolder:/media/share/myFolder
-      - /myFolder2:/media/share/myFolder2
+      - /hostFolderToShare:/media/share/sharedFolderName
+      - /hostFolderToShare2:/media/share/sharedFolderName2
     environment:
       - AFP_USER=myUsername
       - AFP_PASSWORD=${MY_SUPER_PASSWORD}
