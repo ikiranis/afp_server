@@ -11,3 +11,7 @@
 ```
 docker-compose up -d
 ```
+
+### More
+
+https://github.com/cptactionhank/docker-netatalk
